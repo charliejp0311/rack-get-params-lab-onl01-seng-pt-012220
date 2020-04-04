@@ -26,8 +26,10 @@ class Application
       end
 
     elsif req.path.match(/add/)
-      
-      if @@cart.include? 
+      item_for_cart = GET 
+      if @@cart.include?(item_for_cart)
+        
+      end 
 
     else
       resp.write "Path Not Found"
