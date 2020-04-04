@@ -28,6 +28,7 @@ class Application
     elsif req.path.match(/add/)
       item_for_cart = req.GET 
       @@cart << item_for_cart
+      resp.write "#{item_for_cart}"
 
     else
       resp.write "Path Not Found"
