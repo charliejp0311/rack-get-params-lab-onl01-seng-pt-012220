@@ -26,7 +26,7 @@ class Application
       end
 
     elsif req.path.match(/add/)
-      item_for_cart = GET 
+      item_for_cart = req.GET 
       if @@cart.include?(item_for_cart)
         
       end 
